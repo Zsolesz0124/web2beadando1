@@ -1,2 +1,4 @@
-# web2beadando1
-Web-programozás II 1.beadandó (Dániel és Zsolt)
+# web2-pizzeria
+Web-programozás 2 Pizzéria weblap (Beadandó 1)
+
+Link: (majd a globális linket ide kell bemásolni)

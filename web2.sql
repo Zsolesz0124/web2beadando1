@@ -46,7 +46,7 @@ CREATE TABLE `felhasznalok` (
 
 INSERT INTO `felhasznalok` (`id`, `csaladi_nev`, `utonev`, `bejelentkezes`, `jelszo`, `jogosultsag`) VALUES
                                                                                                          (1, 'Rendszer', 'Admin', 'Admin', sha1('admin'), '__1'),
-                                                                                                         (2, 'Családi_2', 'Utónév_2', 'Login2', sha1('login2'), '_1_');
+                                                                                                         (2, 'Proba', 'Felhasznalo', 'Probauser12', sha1('Probauser12'), '_1_');
 
 ----------------------------------------------------------------------
 
@@ -69,7 +69,8 @@ CREATE TABLE `menu` (
 INSERT INTO `menu` (`url`, `nev`, `szulo`, `jogosultsag`, `sorrend`) VALUES
                                                                          ('admin', 'Admin', '', '001', 80),
                                                                          ('belepes', 'Belépés', '', '100', 60),
-                                                                         ('elerhetoseg', 'Pizzáink', '', '111', 20),
+                                                                         ('pizzaink', 'Pizzáink', '', '111', 20),
+                                                                         ('hirek', 'Hírek', '', '111', 20),
                                                                          ('kilepes', 'Kilépés', '', '011', 70),
                                                                          ('nyitolap', 'Nyitólap', '', '111', 10);
 

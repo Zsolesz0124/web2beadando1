@@ -32,6 +32,8 @@ Class Menu {
     public static $pizzas = array();
     public static $pizzacategory = array();
 
+    public static $rendelesek = array();
+
     public static function setPizzas() {
         self::$pizzas = array();
         $connection = Database::getConnection();
@@ -49,6 +51,15 @@ Class Menu {
             self::$pizzacategory[$pizzacatitem['nev']] = array($pizzacatitem['nev'], $pizzacatitem['ar']);
         }
     }
+    public static function setRendelesek() {
+        self::$rendelesek = array();
+        $connection = Database::getConnection();
+        $stmt = $connection->query("select pizzanev, darab, felvetel, kiszallitas from rendeles");
+        while($rendelesitem = $stmt->fetch(PDO::FETCH_ASSOC)) {
+            self::$rendelesek[$rendelesitem['pizzanev']] = array($rendelesitem['pizzanev'], $rendelesitem['darab'], $rendelesitem['felvetel'], $rendelesitem['kiszallitas']);
+        }
+    }
+
 
     public static function getPizzas() {
         $submenu = "";
@@ -78,8 +89,27 @@ Class Menu {
         return $menu.$submenu;
     }
 
+    public static function getRendeles() {
+        $submenu = "";
+
+        $menu = "";
+        foreach(self::$rendelesek as $menuindex => $rendelesitem)
+        {
+            $menu.= "<tr><th scope='row'>$rendelesitem[0]</th><td>$rendelesitem[1]</td><td>$rendelesitem[2]</td><td>$rendelesitem[3]</td></tr>";
+        }
+        $menu.="";
+
+        if($submenu != "")
+            $submenu = "".$submenu."";
+
+        return $menu.$submenu;
+    }
+
+
+
 }
 Menu::setPizzas();
+Menu::setRendelesek();
 Menu::setPizzacategory();
 Menu::setMenu();
 ?>

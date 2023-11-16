@@ -16,8 +16,8 @@
             <div class="row align-items-md-stretch">
                 <div class="col-md-6">
                     <div class="h-100 p-5 text-bg-dark rounded-3">
-                        <h2>Minőségi pizzák</h2>
-                        <p>Itt, ahol az olasz hagyományok és a szenvedély találkoznak, minden szelet egy utazás a kulináris élvezetek birodalmában. ZS 'n D csapatával együtt büszkén hoztuk létre ezt a pizzériát, ahol a friss alapanyagok, a kreatív receptek és a családias hangulat egyesül.</p>
+                        <h2>Röviden a cégünkről</h2>
+                        <p>Danival mindketten nagyon szeretünk pizzákat sütni és emberekkel foglalkozni, így arra a döntésre jutottunk, hogy létrehozzuk a pizzériánkat ahol csak hazai alapanyagokból készítünk a kedves vendégeknek különféle pizzákat.</p>
                     </div>
                 </div>
                 <div class="col-md-6">
