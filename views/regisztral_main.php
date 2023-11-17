@@ -15,7 +15,5 @@ if ($connection->query($sql) === TRUE) {
 } else {
     echo "Hiba: " . $sql . "<br>" . $connection->error;
 }
-echo "VALAMI";
-// Adatbázis kapcsolat lezárása
 $connection->close();
 ?>
